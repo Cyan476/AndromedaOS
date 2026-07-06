@@ -20,11 +20,11 @@ modules:
   - type: dnf
     repos:
       copr:
-        - atim/starship
+
     install:
       packages:
         - neovim
-        - starship
+        - zsh
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
