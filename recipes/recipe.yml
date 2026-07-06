@@ -18,9 +18,7 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
-    repos:
-      copr:
-
+    # Removed COPR and Repo block due to it breaking with no contents.
     install:
       packages:
         - neovim
