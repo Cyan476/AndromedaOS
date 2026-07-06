@@ -18,7 +18,7 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
-    # Removed COPR and Repo block due to it breaking with no contents.
+    # Removed COPR and Repo block due to it breakin with no contents.
     install:
       packages:
         - neovim
@@ -49,5 +49,6 @@ modules:
           - com.rioterm.Rio 
           - org.audacityteam.Audacity 
           - io.github.peazip.PeaZip 
+          - org.atheme.audacious
       - scope: user # Also add Flathub user repo, but no user packages
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
